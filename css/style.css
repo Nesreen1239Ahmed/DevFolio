@@ -1,0 +1,348 @@
+body {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+:root {
+   --main-color-text: white;
+   --main-color: #1e1e1e;
+   --color-second: #4E4E4E;
+   --color-bg: #0078FF;
+
+
+
+
+
+}
+
+
+/* start navbar */
+.navbar-nav .nav-link {
+   position: relative;
+}
+
+.navbar-nav .nav-link::before {
+   content: "";
+   position: absolute;
+   width: 0%;
+   height: 2px;
+   background-color: white;
+   bottom: 0px;
+   transition: 1s width;
+}
+
+.navbar-nav .nav-link:hover::before {
+   width: 80%;
+}
+
+.navbar .nav-link.active {
+   color: white;
+   font-weight: 500;
+}
+
+.navbar .nav-link.active::before {
+
+   width: 80%;
+}
+
+
+
+
+
+
+/* end navbar */
+
+/* start home */
+.home {
+   background-image: linear-gradient(#0009, #0009), url(../images/hero-bg.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   color: var(--main-color-text);
+}
+
+h1 {
+   font-size: 4.5rem;
+   font-weight: 600;
+}
+
+.about {
+   background-color: var(--bs-secondary-bg);
+
+}
+
+.info-bold {
+   color: var(--main-color);
+   font-weight: 600;
+}
+
+.info-light {
+   color: var(--color-second);
+}
+
+.progress {
+   border-radius: unset;
+   height: 0.7rem;
+}
+
+.right h5 {
+   color: var(--main-color);
+   position: relative;
+   margin-bottom: 10px;
+
+
+}
+
+.right h5::after {
+   content: " ";
+   position: absolute;
+   bottom: -12px;
+   left: 0%;
+   margin-top: 50%;
+   height: 3px;
+   width: 20%;
+   background-color: var(--color-bg);
+
+}
+
+/* end home */
+
+/* start services */
+
+.services .icon {
+   border: #0078FF 8px solid;
+   border-radius: 50%;
+   width: 100px;
+   height: 100px;
+   transition: all .5s;
+}
+
+.services .icon:hover {
+   background-color: #0078FF;
+   color: white;
+   border: #CDE1F8 8px solid;
+
+}
+
+/* end services */
+
+/* start number */
+
+.number {
+   background-image: url(../images/counters-bg.jpg);
+
+}
+
+.scroll {
+   background-size: cover;
+   background-position: center center;
+   background-attachment: fixed;
+   padding: 8rem 0px;
+   position: relative;
+}
+
+.overlayer {
+   background-color: rgba(0, 119, 255, .7);
+   position: absolute;
+   top: 0px;
+   bottom: 0px;
+   left: 0px;
+   right: 0px;
+
+}
+
+.number .icons {
+   display: inline-block;
+   width: 100px;
+   height: 100px;
+   border: 10px solid rgba(255, 255, 255, .7);
+   border-radius: 50%;
+
+}
+
+
+/* end number */
+
+
+/* start PORTFOLIO */
+.main-title p {
+   position: relative;
+
+}
+
+.main-title p::after {
+   content: "";
+   width: 5%;
+   height: 5px;
+   background-color: #0078FF;
+   position: absolute;
+   bottom: -10px;
+   left: 50%;
+   transform: translateX(-50%);
+
+}
+
+.card-body {
+   padding-bottom: 0px;
+   padding-top: 10px;
+
+}
+
+
+.portfolio .card {
+   --bs-card-title-spacer-y: 0rem;
+   background-color: white;
+   border-radius: unset;
+   border: unset;
+
+}
+
+.work-img img {
+   transition: all 1s;
+}
+
+.work-box:hover img{
+   transform: scale(1.3);
+}
+
+.work-img {
+   display: block;
+   overflow: hidden;
+}
+
+
+
+.plus {
+   width: 40px;
+   height: 40px;
+   border: #0078FF 3px solid;
+   border-radius: 50%;
+}
+
+.plus i,
+.head .my-color {
+   color: #0078FF;
+}
+
+
+
+
+
+/* end PORTFOLIO */
+
+/* start client */
+.client {
+   background-image: url(../images/overlay-bg.jpg);
+   background-size: cover;
+}
+
+.client img {
+   width: 100px;
+   height: 100px;
+}
+
+.carousel-indicators {
+   position: unset;
+}
+
+.carousel-indicators [data-bs-target] {
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background-color: white;
+}
+
+
+/* end client */
+
+
+
+/* start blog */
+
+.my-image img {
+   width: 30px;
+   height: 30px;
+}
+
+.blog .card-body,
+.blog .card-footer {
+   border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.card-box h6 {
+   top: -20px;
+   left: 50%;
+   transform: translate(-50%);
+   background-color: #0078FF;
+}
+
+/* end blog */
+
+/* start contact */
+
+.contact {
+   background-image: url(../images/overlay-bg.jpg);
+   background-size: cover;
+   position: relative;
+}
+
+
+
+.contact-head h5::after {
+   content: " ";
+   width: 20%;
+   height: 3px;
+   background-color: #0078FF;
+   position: absolute;
+   bottom: -10px;
+   left: 0%;
+
+
+
+}
+
+.contact-details .my-color {
+   color: #0078FF;
+}
+
+.contact-icon span {
+   display: inline-block;
+   width: 50px;
+   height: 50px;
+   border: 4px solid #0078FF;
+   border-radius: 50%;
+   transition: all .6s;
+
+}
+
+.contact-icon span:hover {
+   color: white;
+   border: 4px solid rgba(0, 119, 255, .3);
+   background-color: #0078FF;
+}
+
+.contact h5 {
+   position: relative;
+   margin-bottom: 30px;
+}
+
+.contact h5::after {
+   content: "";
+   width: 20%;
+   height: 3px;
+   background-color: #0078FF;
+   position: absolute;
+   bottom: -15px;
+   right: 50%;
+
+
+}
+
+/* end contact */
+
+/* start footer  */
+
+footer {
+   background-color: #0078FF;
+}
+
+/* end footer */
